@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          repository: 'https://github.com/INFURA/go-ethlibs.git'
+          repository: 'INFURA/go-ethlibs'
       - uses: actions/setup-go@v3
         with:
           go-version: '^1.17.0'
