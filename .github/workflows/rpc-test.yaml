@@ -15,6 +15,6 @@ jobs:
         with:
           repository: 'INFURA/go-ethlibs'
       - name: go version
-        run: go --version
+        run: go version
       - name: Run unit tests
         run: go test ./...
