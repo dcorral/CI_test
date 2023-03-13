@@ -2,6 +2,8 @@ name: run geth test
 on:
   pull_request:
     types: [ labeled ]
+env:
+  ETHLIBS_TEST_ROPSTEN_WS_URL: "wss://eth-mainnet.g.alchemy.com/v2/JtjAvOQaslaoyV11mun-6sKzkYQHznBJ"
 jobs:
   unit-tests:
     if: ${{ github.event.label.name == 'rpc_evm' }}
