@@ -6,7 +6,7 @@ env:
   ETHLIBS_TEST_ROPSTEN_WS_URL: "wss://eth-mainnet.g.alchemy.com/v2/JtjAvOQaslaoyV11mun-6sKzkYQHznBJ"
 jobs:
   unit-tests:
-    if: ${{ github.event.label.name == 'rpc_evm' }}
+    if: ${{ github.event.label.name == 'test/rpc_evm' }}
     name: Unit tests
     runs-on: ubuntu-latest
     steps:
